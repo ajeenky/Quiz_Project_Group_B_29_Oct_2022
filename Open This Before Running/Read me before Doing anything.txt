@@ -1,0 +1,10 @@
+1-> Create a schema name-"questions"
+
+2-> Import two tables which are provided in current folder.
+
+3-> Tables name should be same as we mentioned
+"quiz"
+&
+"user_input"
+
+4-> Load the MySQL connector jar file provided in the folder.

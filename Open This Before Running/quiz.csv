@@ -1,0 +1,11 @@
+Que_no,Questions,A,B,C,D,Correct_Ans
+1,"Who is father of java?","A] Bill Clinton","B] Bill gates","C] James Gosling","D] Michael Jackson",C
+2,"What is default value of String?","A] null","B] 0","C] 0.0","D] boolean",A
+3,"Number of primitive data types in Java are?","A] 100","B] 12","C] 8","D] 56",C
+4,"Arrays in java are-","A] Class","B] Object","C] Interface","D] Database",B
+5,"When is the object created with new keyword?","A] Compile time","B] Run time","C] After execution","D] Before Class creation",B
+6,"In which of the following is toString() method defined?","A] Objet class","B] Interface","C] Console","D] Debug",A
+7,"Which component is used to compile, debug and execute the java programs?","A] JDK","B] JRE","C] SQL","D] Git",A
+8,"Which of the following is not an OOPS concept in Java?","A] Abstraction","B] Polymorphism","C] Inheritance","D] Garbage Collector",D
+9,"Which of the following is a superclass of every class in Java?","A] String Class","B] Array Class","C] Interface","D] Object Class",D
+10,"Which one of the following is not an access modifier?","A] public","B] private","C] over-protected","D] default",C

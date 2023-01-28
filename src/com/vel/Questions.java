@@ -12,10 +12,12 @@ public class Questions {
 	
 	Connection con = null;
 	PreparedStatement pstmt = null;
-	ArrayList<String> al = new ArrayList<String>();
-	ArrayList<String> al1 = new ArrayList<String>();
+	ArrayList<String> al = null;
+	ArrayList<String> al1 = null;
 	
 	public void getQuestionsFromDB() {
+		al = new ArrayList<String>();
+		al1 = new ArrayList<String>();
 		try {
 			Scanner sc = new Scanner(System.in);
 			ConnectionTest cont = new ConnectionTest();
