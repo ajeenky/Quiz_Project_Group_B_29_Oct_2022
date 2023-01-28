@@ -21,6 +21,19 @@ public class Main {
 		user.storeDataIntoDB(Id, name, score, grade);
 		System.out.println("Your Score :: " +score);
 		System.out.println("Your Grade >> " +grade);
+		
+		user.retrieveDataFromDB();
+		System.out.println("Press 1 to check your Score or Press 0 to exit");
+		int temp = sc.nextInt();
+		if(temp == 1) {
+		user.getRecord();
+		System.out.println("Thank you for your participation.");
+		} else if (temp == 0) {
+			System.out.println("Thank you for your participation.");
+		}else {
+			System.err.println("Invalid Input");
+		}
+		sc.close();
 	}
 
 }
