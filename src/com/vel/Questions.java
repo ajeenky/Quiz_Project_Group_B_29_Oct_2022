@@ -5,6 +5,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.Scanner;
 
 public class Questions {
@@ -12,6 +13,7 @@ public class Questions {
 	Connection con = null;
 	PreparedStatement pstmt = null;
 	ArrayList<String> al = new ArrayList<String>();
+	ArrayList<String> al1 = new ArrayList<String>();
 	
 	public void getQuestionsFromDB() {
 		try {
@@ -29,6 +31,7 @@ public class Questions {
 				System.out.println("Enter a option");
 				String input = sc.next();
 				al.add(input);
+				al1.add(res.getString(7));
 			}
 			res.close();
 		} catch (Exception e) {
@@ -49,5 +52,20 @@ public class Questions {
 				}
 			}
 		}
+	}
+	public int calculateScore() {
+		
+		Iterator<String> itr = al.iterator();
+		Iterator<String> itr1 = al1.iterator();
+		int score = 0;
+		while(itr.hasNext()) {
+			itr1.hasNext();
+			String s1 = itr.next();
+			String s2 = itr1.next();
+			if(s1.equals(s2)) {
+				score = score + 1;
+			}
+		}
+		return score;
 	}
 }
