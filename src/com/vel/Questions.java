@@ -68,4 +68,33 @@ public class Questions {
 		}
 		return score;
 	}
+	public String calculateGrade() {
+		int score = calculateScore();
+		String grade = "";
+		
+		switch(score) {
+			case 10:
+				grade = "A";
+				break;
+			case 9:
+				grade = "A";
+				break;
+			case 8:
+				grade = "A";
+				break;
+			case 7:
+				grade = "B";
+				break;
+			case 6:
+				grade = "B";
+				break;
+			case 5:
+				grade = "C";
+				break;
+			default:
+				grade = "Fail";
+		}
+		
+		return grade;
+	}
 }
